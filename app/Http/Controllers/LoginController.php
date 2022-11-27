@@ -20,17 +20,23 @@ class LoginController extends Controller
         return redirect('/');
     }
 
-    public function authenticate(Request $request){
+    public function authenticate(Request $request)
+    {
         $credential = $request->validate([
             'email' => ['required', 'email'],
             'password' => ['required']
         ]);
 
-        if(Auth::attempt($credential)) {
-            
+        if (Auth::attempt($credential)) {
+
             return redirect()->intended('/');
         };
 
-            return back()->with('loginError', 'login gagal');
+        return back()->with('loginError', 'login gagal');
+    }
+
+    public function banner()
+    {
+        return view('dashboard/banner');
     }
 }

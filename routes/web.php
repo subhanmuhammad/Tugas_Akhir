@@ -25,3 +25,5 @@ Route::get('/', function () {
 Route::post('/post_login', [LoginController::class, 'authenticate'])->name('post_logi');
 Route::get('/login', [LoginController::class, 'login'])->name('login')->middleware('guest');
 Route::post('/logout', [LoginController::class, 'logout'])->name('logout');
+
+Route::get('/banner', [LoginController::class, 'banner']);

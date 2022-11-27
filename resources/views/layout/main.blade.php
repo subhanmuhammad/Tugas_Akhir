@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>SISTEM PENERIMAAN SISWA</title>
     <meta content='width=device-width, initial-scale=1.0, shrink-to-fit=no' name='viewport' />
-    <link rel="icon" href="../assets/img/icon.ico" type="image/x-icon" />
+    <link rel="icon" href="" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
 
@@ -122,7 +122,7 @@
                         <div class="info">
                             <span>
                                 <span class="user-level" style="color: black">{{ auth()->user()->name }}</span>
-                               
+
                             </span>
                             <div class="clearfix"></div>
                         </div>
@@ -135,9 +135,9 @@
                             </a>
                         </li>
                         <li class="nav-item active ">
-                            <a href="#" class="collapsed">
+                            <a href="/banner" class="collapsed">
                                 <i class="fa-solid fa-book"></i>
-                                <p>Bnner</p>
+                                <p>Banner</p>
                             </a>
                         </li>
 
@@ -147,8 +147,8 @@
         </div>
         <!-- End Sidebar -->
 
-{{-- conten --}}
-       
+        {{-- conten --}}
+
         <div class="main-panel">
             <div class="content">
                 <div class="panel-header bg-primary-gradient">
@@ -160,56 +160,54 @@
                         </div>
                     </div>
                 </div>
-                @yield('content')  
-                
-               
-                
+
+                @yield('content')
 
             </div>
         </div>
 
-       
 
-{{-- end conten --}}
 
-        
+        {{-- end conten --}}
+
+
         <!--   Core JS Files   -->
-        <script src="{{asset('/assets/js/core/jquery.3.2.1.min.js')}}"></script>
-        <script src="{{asset('/assets/js/core/popper.min.js')}}"></script>
-        <script src="{{asset('/assets/js/core/bootstrap.min.js')}}"></script>
+        <script src="{{ asset('/assets/js/core/jquery.3.2.1.min.js') }}"></script>
+        <script src="{{ asset('/assets/js/core/popper.min.js') }}"></script>
+        <script src="{{ asset('/assets/js/core/bootstrap.min.js') }}"></script>
 
         <!-- jQuery UI -->
-        <script src="{{asset('/assets/js/plugin/jquery-ui-1.12.1.custom/jquery-ui.min.js')}}"></script>
-        <script src="{{asset('/assets/js/plugin/jquery-ui-touch-punch/jquery.ui.touch-punch.min.js')}} "></script>
+        <script src="{{ asset('/assets/js/plugin/jquery-ui-1.12.1.custom/jquery-ui.min.js') }}"></script>
+        <script src="{{ asset('/assets/js/plugin/jquery-ui-touch-punch/jquery.ui.touch-punch.min.js') }} "></script>
 
         <!-- jQuery Scrollbar -->
-        <script src="{{asset('/assets/js/plugin/jquery-scrollbar/jquery.scrollbar.min.js')}}"></script>
+        <script src="{{ asset('/assets/js/plugin/jquery-scrollbar/jquery.scrollbar.min.js') }}"></script>
 
 
         <!-- Chart JS -->
-        <script src="{{asset('/assets/js/plugin/chart.js/chart.min.js')}}"></script>
+        <script src="{{ asset('/assets/js/plugin/chart.js/chart.min.js') }}"></script>
 
         <!-- jQuery Sparkline -->
-        <script src="{{asset('/assets/js/plugin/jquery.sparkline/jquery.sparkline.min.js')}}"></script>
+        <script src="{{ asset('/assets/js/plugin/jquery.sparkline/jquery.sparkline.min.js') }}"></script>
 
         <!-- Chart Circle -->
-        <script src="{{asset('/assets/js/plugin/chart-circle/circles.min.js')}}"></script>
+        <script src="{{ asset('/assets/js/plugin/chart-circle/circles.min.js') }}"></script>
 
         <!-- Datatables -->
-        <script src="{{asset('/assets/js/plugin/datatables/datatables.min.js')}}"></script>
+        <script src="{{ asset('/assets/js/plugin/datatables/datatables.min.js') }}"></script>
 
         <!-- Bootstrap Notify -->
-        <script src="{{asset('/assets/js/plugin/bootstrap-notify/bootstrap-notify.min.js')}}"></script>
+        <script src="{{ asset('/assets/js/plugin/bootstrap-notify/bootstrap-notify.min.js') }}"></script>
 
         <!-- jQuery Vector Maps -->
-        <script src="{{asset('/assets/js/plugin/jqvmap/jquery.vmap.min.js')}}"></script>
-        <script src="{{asset('/assets/js/plugin/jqvmap/maps/jquery.vmap.world.js')}}"></script>
+        <script src="{{ asset('/assets/js/plugin/jqvmap/jquery.vmap.min.js') }}"></script>
+        <script src="{{ asset('/assets/js/plugin/jqvmap/maps/jquery.vmap.world.js') }}"></script>
 
         <!-- Sweet Alert -->
-        <script src="{{asset('/assets/js/plugin/sweetalert/sweetalert.min.js')}}"></script>
+        <script src="{{ asset('/assets/js/plugin/sweetalert/sweetalert.min.js') }}"></script>
 
         <!-- Atlantis JS -->
-        <script src="{{asset('/assets/js/atlantis.min.js')}}"></script>
+        <script src="{{ asset('/assets/js/atlantis.min.js') }}"></script>
 
         {{-- bootstrap --}}
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
@@ -224,10 +222,10 @@
 
 
         <!-- Atlantis DEMO methods, don't include it in your project! -->
-        <script src="{{asset('/assets/js/setting-demo.js')}}"></script>
-        <script src="{{asset('/assets/js/demo.js')}}"></script>
+        <script src="{{ asset('/assets/js/setting-demo.js') }}"></script>
+        <script src="{{ asset('/assets/js/demo.js') }}"></script>
         <script src="https://kit.fontawesome.com/aa01d4a104.js" crossorigin="anonymous"></script>
-      
+
 </body>
 
 </html>
